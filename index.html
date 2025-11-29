@@ -7,17 +7,34 @@
   <title>Document</title>
   <style>
     .container {
-      div {
+
+      .html,
+      .css,
+      .js,
+      .jq,
+      .bs,
+      .sass,
+      .vue {
         text-align: center;
         border-bottom: 1px solid #000;
       }
 
-      div:nth-child(1) {
+      .wda {
+        text-align: center;
         border-bottom: 1px solid #cec7c7;
+
+        p {
+          margin-top: 0;
+          text-align: center;
+        }
       }
 
       h1 {
         margin: 0;
+      }
+
+      h2 {
+        display: none;
       }
 
       h3 {
@@ -30,14 +47,9 @@
         font-size: 20px;
       }
 
-      p:nth-child(1) {
-        margin-top: 0;
-        text-align: center;
-      }
-
       p {
         margin-top: 0;
-        /* text-align: left; */
+        text-align: left;
       }
 
 
@@ -47,8 +59,178 @@
       }
     }
 
-    @media(max-width:576) {
-      .container {}
+    @media(min-width:576px) {
+      .container {
+        width: 100%;
+        height: 95vh;
+        position: relative;
+
+        .wda,
+        .html,
+        .css,
+        .js,
+        .jq,
+        .bs,
+        .sass,
+        .vue {
+          width: 300px;
+          height: 300px;
+          position: absolute;
+          border-bottom: 0;
+
+          h1,
+          h3,
+          h4,
+          p {
+            display: none;
+          }
+
+          h2 {
+            display: block;
+            text-align: center;
+            margin: 0;
+            font-size: 2rem;
+          }
+
+          img {
+            width: 200px;
+          }
+        }
+
+        .wda {
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+
+          img {
+            width: 250px;
+          }
+
+          h1 {
+            display: block;
+          }
+
+          h2 {
+            font-size: 24px;
+          }
+
+          p {
+            display: block;
+          }
+        }
+
+        .html {
+          top: 50px;
+          left: 0x;
+        }
+
+        .html::after {
+          content: "";
+          width: 550px;
+          height: 1px;
+          border-bottom: 2px solid #aaa;
+          position: absolute;
+          top: 290px;
+          left: 245px;
+          transform: rotate(15deg);
+        }
+
+        .css {
+          top: 010px;
+          left: 420px;
+        }
+
+        .css::after {
+          content: "";
+          width: 150px;
+          height: 1px;
+          border-bottom: 2px solid #aaa;
+          position: absolute;
+          top: 290px;
+          left: 245px;
+          transform: rotate(30deg);
+        }
+
+        .js {
+          bottom: 250px;
+          left: 150px;
+        }
+
+        .js::after {
+          content: "";
+          width: 400px;
+          height: 1px;
+          border-bottom: 2px solid #aaa;
+          position: absolute;
+          top: 150px;
+          left: 245px;
+          transform: rotate(-10deg);
+        }
+
+        .jq {
+          bottom: 10px;
+          left: 410px;
+        }
+
+        .jq::after {
+          content: "";
+          width: 150px;
+          height: 1px;
+          border-bottom: 2px solid #aaa;
+          position: absolute;
+          bottom: 290px;
+          left: 245px;
+          transform: rotate(-45deg);
+        }
+
+        .bs {
+          top: 50px;
+          right: 400px;
+        }
+
+        .bs::after {
+          content: "";
+          width: 200px;
+          height: 1px;
+          border-bottom: 2px solid #aaa;
+          position: absolute;
+          top: 250px;
+          right: 220px;
+          transform: rotate(-30deg);
+        }
+
+        .sass {
+          top: 220px;
+          right: 120px;
+        }
+
+        .sass::after {
+          content: "";
+          width: 400px;
+          height: 1px;
+          border-bottom: 2px solid #aaa;
+          position: absolute;
+          top: 180px;
+          right: 270px;
+          transform: rotate(-10deg);
+        }
+
+        .vue {
+          bottom: 0px;
+          right: 350px;
+        }
+
+        .vue::after {
+          content: "";
+          width: 200px;
+          height: 1px;
+          border-bottom: 2px solid #aaa;
+          position: absolute;
+          bottom: 300px;
+          right: 270px;
+          transform: rotate(20deg);
+        }
+      }
     }
   </style>
 </head>
@@ -58,6 +240,7 @@
     <div class="wda">
       <img src="./media_query/images/wda.png">
       <h1>泰山職訓局</h1>
+      <h2>從零開始的網頁設計課程</h2>
       <h3>從零開始的網頁設計課程</h3>
       <p>
         轉職網頁開發人員　掌握就業必備職能<br>
@@ -67,6 +250,7 @@
     <div class="html">
       <img src="./media_query/images/html.png">
       <h4>Html</h4>
+      <h2>Html</h2>
       <p>
         超文本標記語言（英語：HyperText Markup
         Language，簡稱：HTML）是一種用於建立網頁的標準標記語言。
@@ -83,21 +267,49 @@
     </div>
     <div class="css">
       <img src="./media_query/images/css.png">
+      <h4>CSS3</h4>
+      <h2>CSS3</h2>
+      <p>
+        階層式樣式表（英語：Cascading Style
+        Sheets，縮寫：CSS；又稱串樣式列表、級聯樣式表、串接樣式表、階層式樣式表）是一種用來為結構化文件（如HTML文件或XML應用）添加樣式（字型、間距和顏色等）的電腦語言，由W3C定義和維護。CSS3現在已被大部分現代瀏覽器支援，而下一版的CSS4仍在開發中。
+      </p>
     </div>
     <div class="js">
       <img src="./media_query/images/js.png">
+      <h4>JavaScript</h4>
+      <h2>JavaScript</h2>
+      <p>
+        JavaScript（通常縮寫為JS）是一門基於原型和頭等函式的多範式進階直譯程式語言，它支援物件導向程式設計、指令式編程和函數式程式設計。它提供方法來操控文字、陣列、日期以及正規表示式等。不支援I/O，比如網路、儲存和圖形等，但這些都可以由它的宿主環境提供支援。它由Ecma透過ECMAScript實作語言的標準化。目前，它被世界上的絕大多數網站所使用，也被世界主流瀏覽器（Chrome、Firefox、Safari和Opera）所支援。
+      </p>
     </div>
     <div class="jq">
       <img src="./media_query/images/jq.png">
+      <h4>jQuery</h4>
+      <h2></h2>
+      <p>Query是一套跨瀏覽器的JavaScript函式庫，用於簡化HTML與JavaScript之間的操作。約翰·雷西格（John Resig）在2006年1月的BarCamp NYC上釋出了第一個版本。目前由Dave
+        Methvin領導的團隊進行開發。全球前10,000個訪問最高的網站中，有65%使用了jQuery，是曾經最受歡迎的JavaScript函式庫。</p>
     </div>
     <div class="bs">
       <img src="./media_query/images/bs.png">
+      <h4>Bootstrap</h4>
+      <h2>Bootstra</h2>
+      <p>
+        Bootstrap是一組用於網站和網路應用程式開發的開源前端（所謂「前端」，指的是展現給終端使用者的介面。與之對應的「後端」是在伺服器上面執行的代碼）框架，包括HTML、CSS及JavaScript的框架，提供字體排印、表單、按鈕、導航及其他各種元件及Javascript擴充套件，旨在使動態網頁和Web應用的開發更加容易。
+      </p>
     </div>
     <div class="sass">
       <img src="./media_query/images/sass.png">
+      <h4>Sass</h4>
+      <h2>Sass</h2>
+      <p>Sass（英文全稱：Syntactically Awesome Stylesheets）是一個最初由Hampton Catlin設計並由Natalie
+        Weizenbaum開發的層疊樣式表語言。[3][4]在開發最初版本之後，Weizenbaum和Chris
+        Eppstein繼續通過SassScript來繼續擴充Sass的功能。SassScript是一個在Sass檔案中使用的小型手稿語言。</p>
     </div>
     <div class="vue">
       <img src="./media_query/images/vue.png">
+      <h4>Vue</h4>
+      <h2>Vue</h2>
+      <p>Vue.js（/vjuː/，簡稱Vue）是一個用於建立使用者介面的開源MVVM前端JavaScript框架，也是一個建立單頁應用的Web應用框架。Vue.js由尤雨溪建立，由他和其他活躍的核心團隊成員維護。</p>
     </div>
   </div>
 </body>
