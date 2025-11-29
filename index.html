@@ -64,7 +64,615 @@
       }
     }
 
-    @media(min-width:576px) {
+    @media(min-width:768px) {
+      .container {
+        width: 100%;
+        height: 95vh;
+        position: relative;
+        border: 0;
+
+        .wda,
+        .html,
+        .css,
+        .js,
+        .jq,
+        .bs,
+        .sass,
+        .vue {
+          width: 200px;
+          height: 200px;
+          position: absolute;
+          border-bottom: 0;
+
+          h1,
+          h3,
+          h4,
+          p {
+            display: none;
+          }
+
+          h2 {
+            display: block;
+            text-align: center;
+            margin: 0;
+            font-size: 1rem;
+          }
+
+          img {
+            width: 120px;
+          }
+        }
+
+        .wda {
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+
+          img {
+            width: 100%;
+          }
+
+          h1 {
+            display: block;
+          }
+
+          h2 {
+            font-size: 18px;
+          }
+
+          p {
+            display: block;
+            font-size: 10px;
+          }
+        }
+
+        .html {
+          top: 190px;
+          left: 5px;
+        }
+
+        .html::after {
+          content: "";
+          width: 130px;
+          height: 1px;
+          border-bottom: 2px solid #aaa;
+          position: absolute;
+          top: 170px;
+          left: 150px;
+          transform: rotate(30deg);
+        }
+
+        .css {
+          top: 40px;
+          left: 120px;
+        }
+
+        .css::after {
+          content: "";
+          width: 160px;
+          height: 1px;
+          border-bottom: 2px solid #aaa;
+          position: absolute;
+          top: 240px;
+          left: 70px;
+          transform: rotate(60deg);
+        }
+
+        .js {
+          bottom: 295px;
+          left: 0px;
+        }
+
+        .js::after {
+          content: "";
+          width: 100px;
+          height: 1px;
+          border-bottom: 2px solid #aaa;
+          position: absolute;
+          top: 90px;
+          left: 150px;
+          transform: rotate(330deg);
+        }
+
+        .jq {
+          bottom: 110px;
+          left: 90px;
+        }
+
+        .jq::after {
+          content: "";
+          width: 100px;
+          height: 1px;
+          border-bottom: 2px solid #aaa;
+          position: absolute;
+          bottom: 230px;
+          left: 110px;
+          transform: rotate(300deg);
+        }
+
+        .bs {
+          top: 100px;
+          right: 100px;
+        }
+
+        .bs::after {
+          content: "";
+          width: 140px;
+          height: 1px;
+          border-bottom: 2px solid #aaa;
+          position: absolute;
+          top: 200px;
+          right: 80px;
+          transform: rotate(300deg);
+        }
+
+        .sass {
+          top: 220px;
+          right: 10px;
+        }
+
+        .sass::after {
+          content: "";
+          width: 135px;
+          height: 1px;
+          border-bottom: 2px solid #aaa;
+          position: absolute;
+          top: 130px;
+          right: 130px;
+          transform: rotate(330deg);
+        }
+
+        .vue {
+          bottom: 80px;
+          right: 50px;
+        }
+
+        .vue::after {
+          content: "";
+          width: 155px;
+          height: 1px;
+          border-bottom: 2px solid #aaa;
+          position: absolute;
+          bottom: 280px;
+          right: 110px;
+          transform: rotate(50deg);
+        }
+      }
+
+    }
+
+    @media(min-width:1024px) {
+      .container {
+
+        .wda,
+        .html,
+        .css,
+        .js,
+        .jq,
+        .bs,
+        .sass,
+        .vue {
+          width: 250px;
+          height: 250px;
+
+          img {
+            width: 150px;
+          }
+        }
+
+        .wda {
+
+          img {
+            width: 250px;
+          }
+
+          h2 {
+            font-size: 22px;
+          }
+
+          p {
+
+            font-size: 14px;
+          }
+        }
+
+        .html {
+          top: 110px;
+          left: 0px;
+        }
+
+        .html::after {
+          content: "";
+          width: 200px;
+          height: 1px;
+          border-bottom: 2px solid #aaa;
+          position: absolute;
+          top: 235px;
+          left: 200px;
+          transform: rotate(30deg);
+        }
+
+        .css {
+          top: 10px;
+          left: 245px;
+        }
+
+        .css::after {
+          content: "";
+          width: 100px;
+          height: 1px;
+          border-bottom: 2px solid #aaa;
+          position: absolute;
+          top: 280px;
+          left: 120px;
+          transform: rotate(44deg);
+        }
+
+        .js {
+          bottom: 245px;
+          left: 0px;
+        }
+
+        .js::after {
+          content: "";
+          width: 170px;
+          height: 1px;
+          border-bottom: 2px solid #aaa;
+          position: absolute;
+          top: 105px;
+          left: 190px;
+          transform: rotate(350deg);
+        }
+
+        .jq {
+          bottom: 0px;
+          left: 80px;
+        }
+
+        .jq::after {
+          content: "";
+          width: 181px;
+          height: 1px;
+          border-bottom: 2px solid #aaa;
+          position: absolute;
+          bottom: 240px;
+          left: 155px;
+          transform: rotate(320deg);
+        }
+
+        .bs {
+          top: 85px;
+          right: 110px;
+        }
+
+        .bs::after {
+          content: "";
+          width: 140px;
+          height: 1px;
+          border-bottom: 2px solid #aaa;
+          position: absolute;
+          top: 235px;
+          right: 170px;
+          transform: rotate(314deg);
+        }
+
+        .sass {
+          top: 240px;
+          right: 0px;
+        }
+
+        .sass::after {
+          content: "";
+          width: 155px;
+          height: 1px;
+          border-bottom: 2px solid #aaa;
+          position: absolute;
+          top: 130px;
+          right: 230px;
+          transform: rotate(335deg);
+        }
+
+        .vue {
+          bottom: 70px;
+          right: 50px;
+        }
+
+        .vue::after {
+          content: "";
+          width: 140px;
+          height: 1px;
+          border-bottom: 2px solid #aaa;
+          position: absolute;
+          bottom: 280px;
+          right: 210px;
+          transform: rotate(30deg);
+        }
+      }
+    }
+
+    @media(min-width:1200px) {
+      .container {
+
+        img {
+          width: 200px;
+        }
+
+        .wda {
+
+          img {
+            width: 250px;
+          }
+
+          h2 {
+            font-size: 24px;
+          }
+
+          p {
+            font-size: 17px;
+          }
+        }
+
+        .html {
+          top: 120px;
+          left: 0px;
+        }
+
+        .html::after {
+          content: "";
+          width: 300px;
+          height: 1px;
+          border-bottom: 2px solid #aaa;
+          position: absolute;
+          top: 250px;
+          left: 165px;
+          transform: rotate(30deg);
+        }
+
+        .css {
+          top: 20px;
+          left: 255px;
+        }
+
+        .css::after {
+          content: "";
+          width: 150px;
+          height: 1px;
+          border-bottom: 2px solid #aaa;
+          position: absolute;
+          top: 230px;
+          left: 160px;
+          transform: rotate(40deg);
+        }
+
+        .js {
+          bottom: 160px;
+          left: 40px;
+        }
+
+        .js::after {
+          content: "";
+          width: 270px;
+          height: 1px;
+          border-bottom: 2px solid #aaa;
+          position: absolute;
+          top: 80px;
+          left: 170px;
+          transform: rotate(330deg);
+        }
+
+        .jq {
+          bottom: 0px;
+          left: 200px;
+        }
+
+        .jq::after {
+          content: "";
+          width: 130px;
+          height: 1px;
+          border-bottom: 2px solid #aaa;
+          position: absolute;
+          bottom: 280px;
+          left: 188px;
+          transform: rotate(310deg);
+        }
+
+        .bs {
+          top: 70px;
+          right: 170px;
+        }
+
+        .bs::after {
+          content: "";
+          width: 180px;
+          height: 1px;
+          border-bottom: 2px solid #aaa;
+          position: absolute;
+          top: 220px;
+          right: 160px;
+          transform: rotate(320deg);
+        }
+
+        .sass {
+          top: 230px;
+          right: 0px;
+        }
+
+        .sass::after {
+          content: "";
+          width: 250px;
+          height: 1px;
+          border-bottom: 2px solid #aaa;
+          position: absolute;
+          top: 130px;
+          right: 210px;
+          transform: rotate(350deg);
+        }
+
+        .vue {
+          bottom: 0px;
+          right: 50px;
+        }
+
+        .vue::after {
+          content: "";
+          width: 230px;
+          height: 1px;
+          border-bottom: 2px solid #aaa;
+          position: absolute;
+          bottom: 310px;
+          right: 200px;
+          transform: rotate(30deg);
+        }
+      }
+    }
+
+    @media(min-width:1400px) {
+      .container {
+
+        .wda,
+        .html,
+        .css,
+        .js,
+        .jq,
+        .bs,
+        .sass,
+        .vue {
+          width: 300px;
+          height: 300px;
+
+          h2 {
+            font-size: 24px;
+          }
+
+          img {
+            width: 210px;
+          }
+        }
+
+        .wda {
+
+          img {
+            width: 250px;
+          }
+
+        }
+
+        .html {
+          top: 50px;
+          left: 0px;
+        }
+
+        .html::after {
+          content: "";
+          width: 310px;
+          height: 1px;
+          border-bottom: 2px solid #aaa;
+          position: absolute;
+          top: 290px;
+          left: 245px;
+          transform: rotate(15deg);
+        }
+
+        .css {
+          top: 0px;
+          left: 280px;
+        }
+
+        .css::after {
+          content: "";
+          width: 120px;
+          height: 1px;
+          border-bottom: 2px solid #aaa;
+          position: absolute;
+          top: 290px;
+          left: 200px;
+          transform: rotate(30deg);
+        }
+
+        .js {
+          bottom: 230px;
+          left: 30px;
+        }
+
+        .js::after {
+          content: "";
+          width: 280px;
+          height: 1px;
+          border-bottom: 2px solid #aaa;
+          position: absolute;
+          top: 150px;
+          left: 245px;
+          transform: rotate(-10deg);
+        }
+
+        .jq {
+          bottom: 10px;
+          left: 210px;
+        }
+
+        .jq::after {
+          content: "";
+          width: 150px;
+          height: 1px;
+          border-bottom: 2px solid #aaa;
+          position: absolute;
+          bottom: 290px;
+          left: 245px;
+          transform: rotate(-45deg);
+        }
+
+        .bs {
+          top: 15px;
+          right: 170px;
+        }
+
+        .bs::after {
+          content: "";
+          width: 200px;
+          height: 1px;
+          border-bottom: 2px solid #aaa;
+          position: absolute;
+          top: 250px;
+          right: 220px;
+          transform: rotate(-30deg);
+        }
+
+        .sass {
+          top: 225px;
+          right: 70px;
+        }
+
+        .sass::after {
+          content: "";
+          width: 220px;
+          height: 1px;
+          border-bottom: 2px solid #aaa;
+          position: absolute;
+          top: 130px;
+          right: 270px;
+          transform: rotate(-10deg);
+        }
+
+        .vue {
+          bottom: 0px;
+          right: 100px;
+        }
+
+        .vue::after {
+          content: "";
+          width: 200px;
+          height: 1px;
+          border-bottom: 2px solid #aaa;
+          position: absolute;
+          bottom: 300px;
+          right: 270px;
+          transform: rotate(20deg);
+        }
+      }
+    }
+
+    @media(min-width:1600px) {
+
       .container {
         width: 100%;
         height: 95vh;
@@ -290,7 +898,7 @@
     <div class="jq">
       <img src="./media_query/images/jq.png">
       <h4>jQuery</h4>
-      <h2></h2>
+      <h2>jQuery</h2>
       <p>Query是一套跨瀏覽器的JavaScript函式庫，用於簡化HTML與JavaScript之間的操作。約翰·雷西格（John Resig）在2006年1月的BarCamp NYC上釋出了第一個版本。目前由Dave
         Methvin領導的團隊進行開發。全球前10,000個訪問最高的網站中，有65%使用了jQuery，是曾經最受歡迎的JavaScript函式庫。</p>
     </div>
